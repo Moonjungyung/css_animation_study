@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>그라디언트 애니메이션</title>
+    <style>
+        #bg {
+            height: 500px;
+            background: linear-gradient(-90deg, lightpink, lightcoral, lightblue, lightgoldenrodyellow);
+            background-size: 400%;
+            animation: bg 5s ease alternate infinite;
+        }
+        @keyframes bg {
+            0% {background-position: 0 0;}
+            100% {background-position: 100% 0%;}
+        }
+        #btn {
+            padding: 20px; color: #000;
+            background: linear-gradient(-90deg, lightpink, lightblue, lightgoldenrodyellow);
+            background-size: 400%;
+            transition: all 1s;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #btn:hover {
+            background-position: 100% 0; color: #fff;
+        }
+        #btn1 {
+            width: 100px; height: 100px; color: #000;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            background: radial-gradient(circle, lightgoldenrodyellow,lightgreen, lightblue);
+            background-size: 200%;
+            background-position: center;
+            transition: all 1s;
+        }
+        #btn1:hover {
+            background-position: 100% 0; color: #fff;
+        }
+        </style>
+</head>
+<body>
+    <button id="btn">click here!</button>
+    <button id="btn1">click<br>here!</button>
+    <div id="bg"></div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@keyframes rotate {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(-360deg);}
+}
+@keyframes z {
+    0% {background-position: 0 0;}
+    100% {background-position: 2000px 0;}
+}
+@keyframes top_btm {
+    0% {transform: translateY(10px);}
+    100% {transform: translateY(-10px);}
+}
